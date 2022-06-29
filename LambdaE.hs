@@ -1,8 +1,8 @@
-module lambda_eval where
+module LambdaE where
 
 type Symbol = String
 data Expr = Var Symbol | App Expr Expr | Lambda Symbol Expr deriving Eq
---
+
 instance Show Expr where
     show (Var x) = x
     show (App y w) = "(" ++ show y ++ " " ++ show w ++ ")"
