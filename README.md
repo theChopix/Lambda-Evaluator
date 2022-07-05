@@ -1,3 +1,13 @@
-## Lambda-Evaluator
+## Evaluator of Lambda-terms
 
-Program resolves lambda expressions as are in data.hs file with appllicative order evaluation. 
+Program with function **'eval'** resolves lambda-terms which are stored in data structure Expr.  
+  
+`data Expr = Var Symbol | App Expr Expr | Lambda Symbol Expr deriving Eq`  
+
+### Input
+  
+lambda-term stored in Expr data structure  
+
+### Output
+
+reduction of given lambda-term stored in Expr data structure using *Applicative Order Evaluation*
