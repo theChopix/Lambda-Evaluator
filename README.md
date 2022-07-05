@@ -18,4 +18,8 @@ reduction of given lambda-term stored in Expr data structure using *Applicative 
 `x`  
   
 `eval(App (Lambda "x" (Var "x")) (Var "y"))`  
-`y`
+`y`  
+
+### Compilation (in terminal)
+
+`ghci LambdaE.hs`
